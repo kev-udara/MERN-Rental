@@ -49,13 +49,15 @@ function AccessoryBookings() {
                 </Col>
 
                 <Col lg={4} sm={24} className='text-right'>
+                {booking.status !== 'outfordelivery' && booking.status !== 'complete' && (
                         <Popconfirm
                         title="Are you sure you want to cancel this booking ?"
                         onConfirm={()=>{dispatch(cancelAccessoryBookings({bookingid: booking._id, bookedTimeSlots : booking.bookedTimeSlots}))}}
                         okText="Yes"
                         cancelText="No">
                         <button className="cancelbookingbtn" style={{marginTop:'62px',marginLeft:'65px'}}>Cancel Booking</button>
-                        </Popconfirm>  
+                        </Popconfirm>
+                        )}   
                 </Col>
 
               </Row>
