@@ -1,8 +1,11 @@
 const express = require('express')
+const fileUpload = require('express-fileupload');
 const app = express()
 const port = process.env.PORT || 4000
 const dbConnection = require('./db')
-app.use(express.json())
+
+app.use(fileUpload());
+app.use(express.json({ limit: '10mb' }))
 
 app.use('/api/cars/', require('./routes/carsRoute'))
 app.use('/api/users/', require('./routes/usersRoute'))

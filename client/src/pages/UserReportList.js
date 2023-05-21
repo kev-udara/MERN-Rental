@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getAllReports } from '../redux/actions/reportActions';
 import moment from 'moment';
@@ -11,6 +11,7 @@ function UserReportList() {
   const {reports} = useSelector(state => state.reportsReducer);
   const {loading} = useSelector((state)=> state.alertsReducer);
   const user = JSON.parse(localStorage.getItem("user"));
+  const [showMore, setShowMore] = useState(false);
   useEffect(() => {
     dispatch(getAllReports());
   }, []);
@@ -29,11 +30,16 @@ function UserReportList() {
 
         <Col lg={8} sm={24} className='userbookingscolone'>
             <p style={{marginLeft:'8px'}}>Car: <b>{report.car.name}</b></p>
-            <p style={{marginLeft:'8px'}}>Incident Cause: <b><p style={{width:'695px'}}>{report.accidentCause}</p></b></p>
+            <p style={{marginLeft:'8px'}}>Incident Cause: <b><p style={{width:'295px'}}>{showMore ? report.accidentCause : `${report.accidentCause.substring(0, 135)}`}<span onClick={() => setShowMore(!showMore)} style={{cursor: 'pointer',fontWeight:'bold',color:'grey'}}>
+    {showMore ? ' less' : ' more...'}
+  </span></p></b></p>
             <p style={{marginLeft:'8px'}}>Incident Location: <b>{report.accidentLocation}</b></p>
             <p style={{marginLeft:'8px'}}>Incident Date: <b>{moment(report.accidentDate).format('MMM DD YYYY')}</b></p>
             <p style={{marginLeft:'8px'}}>Incident Time: <b>{report.accidentTime}</b></p>
             <p style={{marginLeft:'8px'}}>Status: <b>{report.status === 'orderplaced' ? 'Report Received' : report.status === 'orderconfirmed' ? 'Under Review' : report.status === 'outfordelivery' ? 'Action Taken' : 'Closed'}</b></p>
+        </Col>
+        <Col lg={15} sm={24} className='text-right'>
+        <img style={{borderRadius:15, marginTop:'40px'}} src={report.accidentImage} alt='' height='230' className='userbookingscarimg'/>
         </Col>
         </Row>
       })}

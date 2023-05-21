@@ -25,6 +25,10 @@ const reportSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  accidentImage: { 
+    type: String,
+    required: true,
+  },
   status: {
     type: String,
     enum: ['orderplaced', 'orderconfirmed', 'outfordelivery', 'complete'],

@@ -14,7 +14,7 @@ function AdminReportList() {
   const [filterStatus, setFilterStatus] = useState('');
   const [filterDate, setFilterDate] = useState(null);
   const [sortOrder, setSortOrder] = useState('desc');
-
+  const [showMore, setShowMore] = useState(false);
 
   const handleChangeStatusFilter = (value) => {
     setFilterStatus(value);
@@ -80,7 +80,9 @@ function AdminReportList() {
         <Col lg={11} sm={24} className='userbookingscolone'>
             <p style={{marginLeft:'8px'}}>User: <b>{report.user.username}</b></p>
             <p style={{marginLeft:'8px'}}>Car: <b>{report.car.name}</b></p>
-            <p style={{marginLeft:'8px'}}>Incident Cause: <b> <p style={{width:'695px'}}>{report.accidentCause}</p></b></p>
+            <p style={{marginLeft:'8px'}}>Incident Cause: <b><p style={{width:'295px'}}>{showMore ? report.accidentCause : `${report.accidentCause.substring(0, 135)}`}<span onClick={() => setShowMore(!showMore)} style={{cursor: 'pointer',fontWeight:'bold',color:'grey'}}>
+    {showMore ? ' less' : ' more...'}
+  </span></p></b></p>
             <p style={{marginLeft:'8px'}}>Incident Location: <b>{report.accidentLocation}</b></p>
             <p style={{marginLeft:'8px'}}>Incident Date: <b>{moment(report.accidentDate).format('MMM DD YYYY')}</b></p>
             <p style={{marginLeft:'8px'}}>Incident Time: <b>{report.accidentTime}</b></p>
@@ -95,6 +97,9 @@ function AdminReportList() {
   onChange={(value) => handleChange(report._id, value)}
   options={[    {      value: 'orderplaced',      label: 'Report Received',    },    {      value: 'orderconfirmed',      label: 'Under Review',    },    {      value: 'outfordelivery',      label: 'Action Taken',    },    {      value: 'complete',      label: 'Closed'    },  ]}
 /></p>
+        </Col>
+        <Col lg={12} sm={24} className='text-right'>
+        <img style={{borderRadius:15, marginTop:'57px'}} src={report.accidentImage} alt='' height='230' className='userbookingscarimg'/>
         </Col>
         </Row>
       })}
