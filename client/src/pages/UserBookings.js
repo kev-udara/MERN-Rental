@@ -56,7 +56,7 @@ function UserBookings() {
             okText="Yes"
             cancelText="No"
         >
-            <button className="cancelbookingbtn">Cancel Booking</button>
+            <button className="cancelbookingbtn" style={{marginTop:'62px',marginLeft:'65px'}}>Cancel Booking</button>
         </Popconfirm> 
     )} 
                 </Col>

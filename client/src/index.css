@@ -693,8 +693,6 @@ transform: translate(63.5%,-1%);
   outline: none !important;
   width: 120px;
   margin: 1.25 rem;
-  margin-top: 62px;
-  margin-left: 65px;
 }
 
 #inputID::placeholder {
