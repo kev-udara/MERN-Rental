@@ -694,6 +694,11 @@ transform: translate(63.5%,-1%);
   width: 120px;
   margin: 1.25 rem;
 }
+.closebookingbtn{
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
 
 #inputID::placeholder {
   color: rgb(189, 188, 188);

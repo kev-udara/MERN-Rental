@@ -157,7 +157,28 @@ router.get("/getallaccessorybookings",async(req,res) => {
         }
       });
       
+      router.post("/removebookings", async (req, res) => {
+        try {
+          const booking = await Booking.findOneAndDelete({ _id: req.body.bookingid });
+          const car = await Car.findById(booking.car);
       
+          const updatedBookedTimeSlots = car.bookedTimeSlots.filter(
+            (bookedTimeSlot) => {
+              return (
+                bookedTimeSlot.from !== booking.bookedTimeSlots.from &&
+                bookedTimeSlot.to !== booking.bookedTimeSlots.to
+              );
+            }
+          );
+      
+          car.bookedTimeSlots = updatedBookedTimeSlots;
+          await car.save();
+      
+          res.send("Your booking was removed successfully");
+        } catch (error) {
+          return res.status(400).json(error);
+        }
+      });
       
       
       
@@ -184,6 +205,30 @@ router.get("/getallaccessorybookings",async(req,res) => {
         return res.status(400).json(error);
         }
         });
+
+        router.post("/removedaccessorybookings",async(req,res) => {
+          try{
+              const accessorybooking = await AccessoryBooking.findOneAndDelete({_id : req.body.bookingid});
+              const accessory = await Accessory.findById(accessorybooking.accessory);
+  
+              const updatedaccessoryBookedTimeSlots = accessory.bookedTimeSlots.filter(
+                  (bookedTimeSlot) => {
+                    return (
+                      bookedTimeSlot.from !== accessorybooking.bookedTimeSlots.from &&
+                      bookedTimeSlot.to !== accessorybooking.bookedTimeSlots.to
+                    );
+                  }
+                );
+            
+                accessory.bookedTimeSlots = updatedaccessoryBookedTimeSlots;
+                await accessory.save();
+  
+  
+              res.send('Your booking was cancelled successfully')
+          }catch(error){
+          return res.status(400).json(error);
+          }
+          });
 
         
         // PUT /api/bookings/:id/status

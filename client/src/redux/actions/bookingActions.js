@@ -8,10 +8,11 @@ export const bookCar=(reqobj)=>async dispatch=>{
         await axios.post('/api/bookings/bookcar', reqobj)
         
         dispatch({type:'LOADING', payload:false})
+        message.success('Your car was rented successfully');
         setTimeout(()=>{
-            message.success('Your car was rented successfully');
+            window.location.href='/userbookings'
         },500);
-        window.location.href='/userbookings'
+        
     }catch(error){
         console.log(error)
         dispatch({type:'LOADING', payload:false})
@@ -108,12 +109,42 @@ export const cancelBookings=(reqObj)=>async dispatch=>{
     };
 }
 
+export const removeBookings=(reqObj)=>async dispatch=>{
+    dispatch({type:'LOADING', payload:true})
+    try{
+        await axios.post('/api/bookings/removebookings', reqObj)
+        dispatch({type:'LOADING', payload:false})
+        message.success('Your booking was removed successfully')
+        setTimeout(()=>{
+          window.location.reload()
+        },500);
+    }catch(error){
+        console.log(error)
+        dispatch({type:'LOADING', payload:false})
+    };
+}
+
 export const cancelAccessoryBookings=(reqObj)=>async dispatch=>{
     dispatch({type:'LOADING', payload:true})
     try{
         await axios.post('/api/bookings/cancelaccessorybookings', reqObj)
         dispatch({type:'LOADING', payload:false})
         message.success('Your booking was cancelled successfully')
+        setTimeout(()=>{
+          window.location.reload()
+        },500);
+    }catch(error){
+        console.log(error)
+        dispatch({type:'LOADING', payload:false})
+    };
+}
+
+export const removeAccessoryBookings=(reqObj)=>async dispatch=>{
+    dispatch({type:'LOADING', payload:true})
+    try{
+        await axios.post('/api/bookings/removeaccessorybookings', reqObj)
+        dispatch({type:'LOADING', payload:false})
+        message.success('Your booking was removed successfully')
         setTimeout(()=>{
           window.location.reload()
         },500);

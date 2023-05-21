@@ -1,10 +1,11 @@
 import React,{useState, useEffect} from 'react'
 import DefaultLayout from '../components/DefaultLayout'
 import { useDispatch,useSelector } from 'react-redux'
-import { getAllAccessoryBookings, cancelAccessoryBookings } from '../redux/actions/bookingActions'
+import { getAllAccessoryBookings, cancelAccessoryBookings,removeAccessoryBookings } from '../redux/actions/bookingActions'
 import {Col, Row, Popconfirm} from 'antd'
 import moment from 'moment'
 import Spinner from '../components/Spinner';
+import { FaCross, FaWindowClose, FaXbox } from 'react-icons/fa'
 
 function AccessoryBookings() {
 
@@ -59,7 +60,18 @@ function AccessoryBookings() {
                         </Popconfirm>
                         )}   
                 </Col>
-
+                <Col lg={1}>
+                {booking.status !== 'orderplaced' && booking.status !== 'orderconfirmed' && booking.status !== 'outfordelivery' && (
+                <Popconfirm
+            title="Are you sure you want to remove this booking ?"
+            onConfirm={()=>{dispatch(removeAccessoryBookings({bookingid: booking._id, bookedTimeSlots : booking.bookedTimeSlots}))}}
+            okText="Yes"
+            cancelText="No"
+        >
+            <button className='closebookingbtn'><FaWindowClose/></button>
+        </Popconfirm> 
+        )} 
+                </Col>
               </Row>
              })}
       </Col>
