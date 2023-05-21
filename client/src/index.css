@@ -754,7 +754,7 @@ transform: translate(63.5%,-1%);
 }
 
 .image-logo{
-  background-image: url('../../../../../../Downloads/Screenshot_2023-02-06_at_21.38.22-removebg-preview.png');
+  background-image: url('../../client/src/images/Screenshot_2023-02-06_at_21.38.22-removebg-preview.png');
   height: 40px;
   background-size: contain;
   background-repeat: no-repeat;
