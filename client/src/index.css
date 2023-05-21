@@ -1,0 +1,1619 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cinzel:wght@500&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+  margin: 0;
+  font-family: 'Allerta', serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(29, 39, 41);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.bs1{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+
+.each-slide > div {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.each-slide > div > img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+.adminbookingrow{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.providecouponrow{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.addaccessoryform{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.payment-table th,
+.payment-table td {
+  padding: 10px;
+  border: 1px solid black;
+  background-color: rgb(254, 175, 56);
+}
+
+.payment-table th {
+  background-color: rgb(254, 175, 56);
+  font-weight: bold;
+  color: black;
+}
+
+.payment-table td {
+  text-align: center;
+}
+
+.payment-table a {
+  text-decoration: none;
+  color: blue;
+}
+
+.ant-notification-notice {
+  margin-top: 12px;
+}
+
+
+.spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(254, 175, 56);
+  margin-left:100px ;
+ 
+}
+
+.p{
+  margin: 5px !important;
+  padding: 0;
+}
+
+.btn1{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+}
+.submitreportbtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  color: black!important;
+  background-color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  font-weight: bold;
+  transform: translate(0%,-20%);
+}
+
+.btn1:focus{
+  border: none;
+}
+
+.eye-btn{
+  transform: translate(-95%,-9%);
+}
+.eye-btn:focus{
+  border: none;
+  outline: none;
+}
+
+.resetpasswordlabel{
+  transform: translate(-192%,83%);
+}
+
+.resetconfirmpasswordlabel{
+  transform: translate(-125%,82%);
+}
+
+.password-input{
+  transform: translate(0%,-52%);
+}
+
+.forgotpasswordbtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  transform: translate(0%,52%);
+}
+
+.forgotpasswordbtn:focus{
+  border: none;
+}
+
+.home-fleetbtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 160px;
+  margin-right: 5px;
+}
+
+.home-accessorybtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+}
+
+.timeslots-button{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  margin-top: 0.5rem
+}
+
+.updatestatusbtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+button{
+  padding: 3px 10px !important;
+}
+
+.header{
+  padding: 10px;
+  background-color: rgb(17, 17, 19);
+  width: 100%;
+  padding-top: 25px;
+}
+
+.admin-header{
+  padding: 10px;
+  background-color: rgb(17, 17, 19);
+  width: 100%;
+  padding-top: 25px;
+}
+
+.admin-header .ant-btn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: rgb(254, 175, 56) !important;
+  color: black !important;
+  border: 1px solid black !important;
+  outline: none !important;
+  width: 6%;
+  margin-right: 127px;
+}
+
+.logo{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  transform: translate(0%,11%);
+}
+.admincarheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(185%,85%);
+  margin-left: -32px;
+}
+.adminaccessoriesheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(40%,82.5%);
+}
+.adminpaymentsheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-10%,82.5%);
+}
+.adminreportsheading{
+    color: rgb(254, 175, 56) !important;
+    font-family: 'Cinzel', serif !important;
+    font-size: smaller;
+    transform: translate(-150%,82.5%);
+}
+.adminhomeheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-96%,85%);
+  padding: auto;
+}
+.adminfleetheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-34%,82.5%);
+  padding: auto;
+  margin-left: 20px;
+}
+.adminouraccessoriesheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-66%,82.5%);
+  padding: auto;
+}
+.adminmybookingsheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-110%,82.5%);
+  padding: auto;
+}
+.adminreportheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-209%,82.5%);
+  padding: auto;
+}
+.adminreportsheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-48%,82.5%);
+  padding: auto;
+}
+.adminrequestsheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-82%,82.5%);
+  padding: auto;
+}
+.ratinglabel{
+  transform: translate(-760%,0%);
+}
+.totalhours{
+  transform: translate(37%);
+}
+.starratings{
+  transform: translate(-382%);
+}
+.selected-page {
+  position: relative;
+}
+
+.selected-page::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(254, 175, 56);
+  transition: transform 0.3s ease-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.selected-page:hover::after,
+.selected-page:focus::after {
+  transform: scaleX(1);
+}
+
+.indicentreportcars{
+  transform: translate(24%);
+}
+.accidentcauselabel{
+  transform: translate(-24%);
+}
+.accidentdatelabel{
+  transform: translate(44.5%);
+}
+.accidenttimelabel{
+  transform: translate(107.5%);
+}
+.accidentlocationlabel{
+  transform: translate(-28%);
+}
+.accidentcauseinput{
+transform: translate(5%);
+}
+.reportincidentdate{
+transform: translate(63.5%,-1%);
+}
+.reportincidenttime{
+  transform: translate(163.5%,-1%);
+  }
+.questionselectbox{
+  transform: translate(-60%,-95%);
+
+}
+.header .ant-btn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: rgb(254, 175, 56) !important;
+  color: black !important;
+  border: 1px solid black !important;
+  outline: none !important;
+  width:auto;
+  margin-right: 127px;
+}
+.savedbtn{
+  box-shadow: none !important;
+  color: rgb(254, 175, 56) !important;
+  outline: none !important;
+  width:auto;
+  height: 23px;
+  margin-right: 27px;
+  transform: translate(-502%,16%);
+  border: none;
+}
+
+
+.content{
+  min-height: 100%;
+  height: auto;
+  background-color: rgb(17, 17, 19);
+}
+
+/*Just for UI purpose only, no functionality related*/
+
+
+.car{
+  border-radius: 5px;
+  margin-top: 100px;
+  height: 160px;
+  transition: 0.3s;
+  background-color: rgb(254, 175, 56);
+}
+
+.car:hover{
+  height: 307px;
+}
+
+.car:hover > .car-content{
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+.carimg{
+  height: 180px;
+  width: auto;
+  border-radius: 5px;
+  transform: translateY(-50px);
+}
+
+
+
+.car-content{
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.image-circle {
+  width: 50px; /* set the width and height of the circle */
+  height: 50px;
+  border-radius: 50%; /* make the element a circle */
+  overflow: hidden; /* hide any overflow from the image */
+  transform: translate(102%);
+}
+
+.image-circle img {
+  width: 120%; /* set the width of the image to fill the circle */
+  height: 100%; /* allow the height of the image to adjust proportionally */
+}
+
+.welcome-paragraph-contactreason{
+  color: white;
+  text-align: center;
+  transform: translate(-60%,70%);
+  width: 920px;
+  margin-left: 260px;
+  font-family: 'Raleway', sans-serif;
+}
+.welcome-paragraph-contactnumber{
+  color: white;
+  text-align: center;
+  transform: translate(-40%,70%);
+  width: 920px;
+  margin-left: 260px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.accessory{
+  border-radius: 5px;
+  margin-top: 100px;
+  height: 160px;
+  transition: 0.3s;
+  background-color: rgb(254, 175, 56);
+}
+
+.accessory:hover{
+  height: 342px;
+}
+
+.accessory:hover > .accessory-content{
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+.accessoryimg{
+  height: 180px;
+  width: auto;
+  border-radius: 5px;
+  transform: translateY(-50px);
+}
+
+
+
+.accessory-content{
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.login{
+  background-color: black;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.login label , .login h1{
+  color: white !important;
+  opacity: 0.6;
+}
+
+.login form{
+  background-color: #1F1F1F;
+  border-radius: 10px;
+}
+
+.login-form input{
+  background-color: #333333 !important;
+  border: none !important;
+  color: white;
+  opacity: 0.5;
+}
+.login-logo{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  bottom: 50%;
+  transform: translateY(-50%, -50%);
+  font-size: 45px;
+  opacity: 0.2 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login a{
+  color: white !important;
+  opacity: 0.5;
+}
+
+.forgotpassword{
+  background-color: black;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.forgotpassword label , .forgotpassword h1{
+  color: white !important;
+  opacity: 0.6;
+}
+
+.forgotpassword h1{
+  margin-left: 11px;
+}
+
+.forgotpassword form{
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  width: 652px;
+  margin-left: 392px;
+  margin-top: -330px;
+  transform: translate(0%,-3%);
+}
+
+.forgotpassword-form input{
+  background-color: #333333 !important;
+  border: none !important;
+  color: white;
+  opacity: 0.5;
+}
+
+.forgotpassword-logo{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  bottom: 50%;
+  transform: translateY(-50%, -50%);
+  font-size: 45px;
+  opacity: 0.2 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.forgotpassword a{
+  color: white !important;
+  opacity: 0.5;
+}
+
+.forgotpasswordinput{
+  width:422px
+}
+
+.forgotpasswordbg{
+  transform: translate(0%,30%);
+}
+
+.resetpassword{
+  background-color: black;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.resetpassword label , .resetpassword h1{
+  color: white !important;
+  opacity: 0.6;
+}
+
+.resetpassword h1{
+  margin-left: 11px;
+}
+
+.resetpassword form{
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  width: 652px;
+  margin-left: 392px;
+  margin-top: -372px;
+  transform: translate(0%,-3%);
+}
+
+.resetpassword-form input{
+  background-color: #333333 !important;
+  border: none !important;
+  color: white;
+  opacity: 0.5;
+}
+
+.resetpassword-logo{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  bottom: 50%;
+  transform: translateY(-50%, -50%);
+  font-size: 45px;
+  opacity: 0.2 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resetpassword a{
+  color: white !important;
+  opacity: 0.5;
+}
+
+.resetpasswordinput{
+  width:422px
+}
+
+.resetpasswordbg{
+  transform: translate(0%,30%);
+}
+
+.register-icon{
+  transform: translate(1950%,-195%);
+}
+
+.carimg2{
+  height: 400px;
+  border-radius: 10px;
+  width: 600px;
+}
+.carimg3{
+  height: 400px;
+  border-radius: 10px;
+  width: 600px;
+  object-fit: cover;
+}
+
+
+.userbookingscolone{
+  margin-top: 0.5rem;
+}
+
+.userbookingscarimg{
+  padding: 0.5em;
+}
+
+.cancelbookingbtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  margin: 1.25 rem;
+  margin-top: 62px;
+  margin-left: 65px;
+}
+
+#inputID::placeholder {
+  color: rgb(189, 188, 188);
+  opacity: 1;
+  box-shadow: none;
+  border: none;
+}
+.home-each-slide-effect > div {
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 704px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+ background-position: center;
+}
+
+.slide-show-text{
+  text-align:left;
+  top:68%;
+  left: 35%;
+  transform: translate(-95%, 115%);
+  color: white;
+  opacity: 100%;
+  font-size: xx-large;
+}
+
+.slide-show-paraone{
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  font-variant: normal;
+}
+.slide-show-paratwo{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+}
+.slide-show-parathree{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-variant: normal;
+  font-size: 20px;
+  transform: translate(0%,-95%);
+}
+
+
+.each-slide-effect > div {
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+ background-position: center;
+}
+
+.image-logo{
+  background-image: url('../../../../../../Downloads/Screenshot_2023-02-06_at_21.38.22-removebg-preview.png');
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 90px;
+  margin-bottom: 10px;
+  transform: translate(0%,-6%);
+}
+.form-control{
+  width: 500px;
+  margin-left: 20px;
+}
+
+
+.select-control{
+  width: 330px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.home-content{
+  margin-top: 60px;
+  height: 280px;
+}
+
+.home-contentimg{
+  height: 280px;
+  width: 469px;
+}
+.center__text{
+  position: absolute;
+  top: 88%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: 0.3s;
+}
+
+.center__text:hover{
+  top : 84%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.button_content{
+  position: absolute;
+  top: 52%;
+  left: 203%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-text{
+text-align: center;
+color: white;
+margin-top: 20px;
+margin-right: 105px;
+font-family: 'Raleway', sans-serif;
+font-size: 20px;
+}
+
+.welcome-text-title{
+  text-align: center;
+color: white;
+margin-top: 20px;
+margin-right: 105px;
+font-family: 'Raleway', sans-serif;
+font-size: 30px;
+font-weight:700;
+}
+
+.arrowimage{
+ width: 30px;
+ margin-left: 12px;
+}
+
+.welcome-paragraph{
+  color: white;
+  text-align: center;
+  transform: translate(0%,20%);
+  width: 920px;
+  margin-left: 260px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.accessory-title{
+  color: white;
+  margin-right: 990px;
+}
+
+.accessory-paragraph{
+  font-family: 'Raleway', sans-serif;
+  transform: translate(0%,-20%);
+  margin-top: 120px;
+  color: white;
+}
+.accessorypage-img{
+  width: 790px;
+}
+
+.choose-content-img{
+  height: 140px;
+}
+
+.choose-content-imgtwo{
+  height: 130px;
+}
+
+.comment{
+  transform: translate(0%,-40%);
+  width: 420px;
+  height: 90px;
+  background-color: #333333 !important;
+  border: none !important;
+  color: white;
+  text-align: baseline;
+}
+
+.feedback-name{
+  transform: translate(0%,-125%);
+  width: 420px;
+}
+
+.feedback{
+  padding-top: 50px;
+  min-height: 100vh;
+  margin-left: 20px;
+}
+
+.feedback form{
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  width: 620px;
+}
+.feedback-form input{
+  background-color: #333333 !important;
+  border: none !important;
+  color: white;
+  opacity: 0.5;
+}
+.feedback-form-title{
+  color:white;
+  margin-right:120px
+}
+
+.feedback-list{
+  transform: translate(24%,-200%);
+}
+
+.comment-text{
+  transform: translate(0,-102%);
+}
+.feedback-order{
+  margin-left: 700px;
+}
+
+.feedback-box{
+  background-color: rgb(112, 111, 111);
+  height: auto;
+  border-radius: 10px;
+  width: 59%;
+  margin-left: 145px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.feedback-star{
+  transform: translate(195%);
+}
+
+.feedbacksubmit-btn{
+  margin: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  margin-right: 25px;
+}
+
+.listfeedback-star{
+  transform: translate(195%);
+}
+
+.feedback-list-name{
+  transform: translate(0%,45%);
+}
+.feedback-list-comment{
+  color:white;
+  width:220px;
+  margin-left:50px
+}
+.feedback-list-title{
+  color:white;
+  margin-top:115px
+}
+
+.bouncing-image {
+  animation-name: bounce;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.faq-heading{
+  background-color: rgb(48, 65, 68);
+  display: inline-block;
+  width: 90%; /* set a specific width */
+}
+.faq-heading-hr{
+  transform: translate(0%,-190%);
+  margin-left: 72px;
+  background-color: rgb(254, 175, 56);
+  height: 34px;
+  width: 4px;
+}
+.faq-collapse{
+  background-color:rgb(101, 137, 143) ;
+}
+
+.toggle-switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+}
+
+.toggle-switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 17px;
+  background-color: #bfbfbf;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.toggle-switch-label:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  background-color: #ffffff;
+  transition: transform 0.2s;
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-switch-label {
+  background-color: #0080ff;
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-switch-label:before {
+  transform: translateX(34px);
+}
+
+
+
+
+@media screen and (max-width: 926px) 
+{
+  
+  .logo{
+    font-size: 16px;
+    transform: translate(70%,30%);
+    margin-right: 260px;
+    width: max-content;
+  }
+  .image-logo{
+    height:30px ;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  } 
+  .header .ant-btn{
+    border-radius: 15px;
+    box-shadow: none !important;
+    background-color: rgb(254, 175, 56) !important;
+    color: black !important;
+    border: 1px solid black !important;
+    outline: none !important;
+    width: auto;
+    margin-right: 24px;
+  } 
+  .home-each-slide-effect > div {
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 304px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+   background-position: center;
+  }
+  .slide-show-text{
+    text-align:left;
+    top:68%;
+    left: 35%;
+    transform: translate(-92%, 280%);
+    color: white;
+    opacity: 100%;
+    font-size: xx-small;
+  }
+  .slide-show-paraone{
+    font-family: 'Raleway', sans-serif;
+    font-size: 8px;
+    font-weight: 300;
+    font-variant: normal;
+  }
+  .slide-show-paratwo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .slide-show-parathree{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-variant: normal;
+    font-size: 7px;
+    transform: translate(0%,5%);
+  }
+  .welcome-text{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-right: 105px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    }
+    .welcome-text-title{
+      text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-right: 107px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight:700;
+    }
+    .welcome-paragraph{
+      color: white;
+      text-align: center;
+      transform: translate(0%,5%);
+      width: 350px;
+      margin-left: 40px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 12px;
+    }
+    h3{
+      font-size: 15px;
+    }
+    .center__text_bottom{
+      font-size: 12px;
+    }
+    .choose-content-img{
+      height: 40px;
+    }
+    
+    .choose-content-imgtwo{
+      height: 35px;
+    }
+    .choose-content-paragraph{
+      font-size: 10px;
+    }
+    .choose-content-paragraphone{
+      font-size: 10px;
+      transform: translate(0%,20%);
+    }
+    .choose-contentone{
+      margin-right: 162px;
+    }
+    .choose-contenttwo{
+      margin-left: 142px;
+      transform: translate(0%,-102%);
+    }
+    .choose-contentthree{
+      margin-right: 162px;
+    }
+    .choose-contentfour{
+      margin-left: 142px;
+      transform: translate(0%,-112%);
+    }
+    .choose-contentfive{
+      margin-right: 162px;
+      transform: translate(0%,-100%);
+    }
+    .choose-contentsix{
+      margin-left: 142px;
+      transform: translate(0%,-210%);
+    }
+    .choose-contentseven{
+      margin-right: 162px;
+      transform: translate(0%,-100%);
+    }
+    .choose-contenteight{
+      margin-left: 142px;
+      transform: translate(0%,-210%);
+    }
+    .feedback{
+      padding-top: 30px;
+      min-height: 100vh;
+      margin-left: 5px;
+    }
+
+    .feedback form{
+      background-color: #1F1F1F;
+      border-radius: 10px;
+      width: 320px;
+      height: 420px;
+    }
+    .feedback-form-title{
+      color:white;
+      margin-right:10px;
+      font-size: 18px;
+      transform: translate(-38%,0%);
+    }
+    .feedback-name{
+      transform: translate(0%,-125%);
+      width: 160px;
+    }
+    .comment{
+      transform: translate(5%,-40%);
+      width: 140px;
+      height: 90px;
+      background-color: #333333 !important;
+      border: none !important;
+      color: white;
+      text-align: baseline;
+    }
+    .star{
+      width: 25px;
+    }
+    .feedback-list-title{
+      color:white;
+      margin-top:55px;
+      margin-left: -5px;
+    }
+    .feedback-box{
+      background-color: rgb(112, 111, 111);
+      height: auto;
+      border-radius: 10px;
+      width: 70%;
+      margin-left: 35px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+    .feedbacklist-star{
+      width: 25px;
+    }
+    .listfeedback-star{
+      transform: translate(278%);
+      margin-left: -72px;
+}
+.feedback-list-name{
+  transform: translate(50%,45%);
+}
+.feedback-list-comment{
+  color:white;
+  width:220px;
+  margin-left:20px
+}
+.content{
+  min-height: 100%;
+  height: auto;
+  background-color:  rgb(17, 17, 19);
+}
+.each-slide-effect > div {
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  height: 145px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+ background-position: center;
+}
+.form-control{
+  width: 520px;
+  margin-left: 20px;
+}
+.rangepicker{
+  width: 1600px;
+}
+.select-control{
+  width: 520px;
+}
+.speedometer{
+  margin-right: 12px;
+}
+.carimg2{
+  height: auto;
+  border-radius: 10px;
+  width: 300px;
+  transform: translate(0%,0%);
+  object-fit: contain;
+}
+.divider{
+  transform: translate(-10%);
+}
+.rentingcar-name{
+  margin-left: 12px;
+}
+.rentingcar-row{
+  margin-left: 82px;
+}
+.rentingcar-rangepicker{
+  width: 235px;
+  transform: translate(-12%,-62%);
+}
+.rentingcar-othercontent{
+ transform: translate(-18%,-12%);
+}
+.rentingcar-total{
+  font-size: 22px;
+}
+.timeslots-button{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  transform: translate(-62%,-61%);
+}
+.userbookingscarimg{
+  padding: 0.5em;
+  width: 320px;
+  height: 220px;
+  margin-left: 46px;
+}
+.cancelbookingbtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  margin: 1.25 rem;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  transform: translate(62%,-10%);
+}
+.userbookingscolone{
+  margin-top: 0.5rem;
+  margin-left: 22px;
+}
+.accessory-title{
+  font-size: 22px;
+  white-space: nowrap;
+  margin-right:2500px;
+}
+.accessorypage-img{
+  height: 200px;
+  width: 390px;
+  margin-left: 22px;
+}
+.accessory-paragraph{
+  font-family: 'Raleway', sans-serif;
+  transform: translate(0%,-20%);
+  margin-top: 80px;
+  color: white;
+}
+.feedbacksubmit-btn{
+  margin: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  margin-right: 15px;
+}
+.rentingaccessory-row{
+  margin-left: 12px;
+}
+.rentingaccessory-name{
+  transform: translate(-32%,5%);
+}
+.rentingaccessoryrentperhour{
+  transform: translate(-62%,2%);
+}
+.rentingaccessorydescription{
+  transform: translate(12%);
+  width: 190px;
+  text-align: left;
+}
+.login-backgroundimg{
+  height: 280px;
+  margin-left: 3px;
+  margin-top: -80px;
+}
+.login form{
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  margin-top: -35px;
+}
+.login-form-title{
+  margin-left: 80px;
+}
+.login-register-redirect{
+  font-size: 11px;
+  margin-left: -22px;
+}
+.register-backgroundimg{
+  height: 228px;
+  margin-left: 1px;
+  margin-top: -104px;
+}
+.admin-header .ant-btn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: rgb(254, 175, 56) !important;
+  color: black !important;
+  border: 1px solid black !important;
+  outline: none !important;
+  width: 20%;
+  margin-right: 17px;
+}
+.home-fleetbtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 160px;
+  margin-right: 5px;
+  transform: translate(18%);
+}
+.home-accessorybtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  transform: translate(33%);
+}
+.faq-heading{
+  font-size: 20px;
+}
+.faq-heading-hr{
+  height: 22px;
+  transform: translate(-1368%,-215%);
+}
+.faq-collapse{
+margin-right: -45px;
+transform: translate(-16%,-0.2%);
+}
+.updatestatusbtn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: black!important;
+  color: rgb(254, 175, 56)!important;
+  border: 1px solid black !important;
+  padding: 5px !important;
+  outline: none !important;
+  width: 120px;
+  margin-top: 7px;
+  margin-left: 25px;
+}
+.accessory:hover{
+  height: 332px;
+}
+.adminselectbox{
+  transform: translate(142%,-542%);
+}
+.updatestatusbtn{
+  transform: translate(38%,-380%);
+  margin-bottom: -12px;
+}
+.adminbookingrow{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  height: 482px;
+  margin-bottom: 54px;
+}
+.addaccessoryform{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: 360px;
+}
+.adminbookingsecondrow{
+  margin-left: 8.5px;
+}
+.admincarform{
+  width: 380px;
+}
+.forgotpassword form{
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  width: 352px;
+  margin-left: 38px;
+  margin-top: 120px;
+}
+.forgotpasswordinput{
+  width: 282px;
+  transform: translate(-9%);
+}
+.forgotpasswordbg{
+  height: 280px;
+  margin-right: 42px;
+  margin-top: -80px;
+  transform: translate(-2%,85%);
+}
+.each-slide > div {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  transform: translate(0%,15%);
+}
+
+.each-slide > div > img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  transform: translate(0%,15%);
+}
+.carimg3{
+  height: 200px;
+  border-radius: 10px;
+  width: 300px;
+  transform: translate(0%,0%);
+  object-fit: cover;
+}
+.resetpassword form{
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  width: 352px;
+  margin-left: 38px;
+  margin-top: 120px;
+}
+.resetpassword .password-input{
+  transform: translate(-810%,-20%);
+}
+.resetpasswordlabel{
+width: 5px;
+margin-left: -310px;
+font-size: small;
+transform: translate(-150%,95%);
+}
+.resetconfirmpasswordlabel{
+width: 5px;
+margin-left: -318px;
+font-size: small;
+transform: translate(-150%,80%);
+}
+.resetpassword-form input{
+  width: 5px;
+}
+.eye-btn{
+  transform: translate(1220%,-102%);
+}
+.password-input{
+  width: 18px;
+}
+.forgotpasswordbtn{
+  height: auto;
+}
+.admincarheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-125%,85%);
+}
+.adminaccessoriesheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-115%,82.5%);
+}
+.adminpaymentsheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-125%,82.5%);
+}
+.adminreportsheading{
+    color: rgb(254, 175, 56) !important;
+    font-family: 'Cinzel', serif !important;
+    font-size: smaller;
+    transform: translate(-150%,82.5%);
+}
+.adminhomeheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-105%,85%);
+  padding: auto;
+}
+.adminfleetheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-40%,82.5%);
+  padding: auto;
+  margin-left: 20px;
+}
+.adminouraccessoriesheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-70%,82.5%);
+  padding: auto;
+}
+.adminmybookingsheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-112%,82.5%);
+  padding: auto;
+}
+.adminreportheading{
+  color: rgb(254, 175, 56) !important;
+  font-family: 'Cinzel', serif !important;
+  font-size: smaller;
+  transform: translate(-209%,82.5%);
+  padding: auto;
+}
+.admin-header .ant-btn{
+  border-radius: 15px;
+  box-shadow: none !important;
+  background-color: rgb(254, 175, 56) !important;
+  color: black !important;
+  border: 1px solid black !important;
+  outline: none !important;
+  width: auto;
+  margin-right: 127px;
+  transform: translate(-970%,0%);
+}
+.ratinglabel{
+  transform: translate(-5205%,0%);
+}
+.totalhours{
+  transform: translate(47%);
+}
+.starratings{
+  transform: translate(-262%);
+}
+}
+

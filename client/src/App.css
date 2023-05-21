@@ -1,0 +1,220 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.morphfade-enter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: scale(0.2);
+  opacity: 0;
+}
+
+.morphfade-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+.morphfade-exit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.morphfade-exit-active {
+  transform: scale(0.2);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 300ms, transform 300ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.slide-left-enter {
+  transform: translateX(100%);
+}
+.slide-left-enter-active {
+  transform: translateX(0%);
+  transition: transform 300ms ease-in;
+}
+.slide-left-exit {
+  transform: translateX(0%);
+}
+.slide-left-exit-active {
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in;
+}
+
+
+.scale-in-enter {
+  opacity: 0;
+  transform: scale(0);
+}
+.scale-in-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+.scale-in-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.scale-in-exit-active {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+.slide-right-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.slide-right-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+.slide-right-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide-right-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+.fade-down-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.fade-down-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+.fade-down-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-down-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+.crossfade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.crossfade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.crossfade-exit {
+  opacity: 1;
+}
+
+.crossfade-exit-active {
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.fade-slide-enter {
+  opacity: 0;
+  transform: translateY(-10%);
+}
+
+.fade-slide-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.fade-slide-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-exit-active {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
