@@ -88,7 +88,7 @@ router.post(
               <img src="https://lh3.googleusercontent.com/p/AF1QipMgkVPRrlMxadokpqrrDycdpk_pCLBhUGzQ880G=w1080-h608-p-no-v0" alt="EZ-Auto Logo" style="display: block; margin: 0 auto; max-width: 200px;">
               <p>You are receiving this email because you (or someone else) has requested the reset of the password for your account.</p>
               <p>Please click on the following link, or paste this into your browser to complete the process:</p>
-              <p><a href="http://localhost:3000/reset-password/${resetToken}" style="color: white;">http://localhost:3000/reset-password/${resetToken}</a></p>
+              <p><a href="https://mern-rental.herokuapp.com/reset-password/${resetToken}" style="color: white;">https://mern-rental.herokuapp.com/reset-password/${resetToken}</a></p>
               <p>If you did not request this, please ignore this email and your password will remain unchanged.</p>
             </div>
           `
