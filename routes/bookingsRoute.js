@@ -266,13 +266,13 @@ router.get("/getallaccessorybookings",async(req,res) => {
                 id: charge.id,
                 amount: charge.amount / 100,
                 currency: charge.currency.toUpperCase(),
-                status: charge.status,
+                status: charge.refunded ? "Refunded" : charge.status,
                 created: new Date(charge.created * 1000).toLocaleString(),
                 receiptUrl: charge.receipt_url,
                 description: charge.description,
                 customer: {
                   id: charge.customer,
-                  email: charge.receipt_email, // Use charge.receipt_email to get the customer email
+                  email: charge.receipt_email,
                 },
               }));
           
@@ -282,6 +282,7 @@ router.get("/getallaccessorybookings",async(req,res) => {
               return res.status(500).json({ error: "Failed to fetch payment information" });
             }
           });
+          
           
 
         
