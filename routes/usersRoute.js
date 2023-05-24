@@ -41,9 +41,7 @@ router.post("/register", async(req, res) =>{
 
 });
 
-// @route   POST api/users/forgot-password
-// @desc    Send password reset email
-// @access  Public
+
 router.post(
     '/forgot-password',
     [
@@ -122,26 +120,20 @@ router.post(
     }
   
     try {
-      // Find user by reset token
       const user = await User.findOne({ resetPasswordToken: resetToken });
   
-      // If user not found, return error
       if (!user) {
         return res.status(404).json({ error: 'User not found' });
       }
   
-      // Check if reset token is still valid
       if (user.resetPasswordExpiration.getTime() < new Date().getTime()) {
         return res.status(400).json({ error: 'Password reset link has expired' });
       }
   
-      // Update user's password and remove reset token
       user.password = password;
       user.resetPasswordToken = null;
       user.resetPasswordExpiration = null;
       await user.save();
-      // Redirect user to login page with success message
-      //window.location.href='/login';
   
     } catch (error) {
       console.error(error);
